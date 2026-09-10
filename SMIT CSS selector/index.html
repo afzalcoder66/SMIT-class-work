@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 18px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow'-;
+            font-style: normal;
+        }
+        p{
+            color: red;
+        }
+        #div-1 p{
+            color: blue;
+        }
+        #div-2 p span{
+            color: green;
+        }
+        #div-1 > p{
+            color: green;
+        }
+        h1 + p {
+        font-size: 24px;
+        font-style: italic;
+        }
+       #div-3 h1 ~ p{
+            color: brown;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- CSS Type selector  -->
+    <div id="div-1">
+        <h1>this is bold</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam voluptatibus exercitationem veritatis
+            iusto doloribus, molestiae, quasi tempore dolore a tenetur quas provident necessitatibus, cupiditate sed
+            asperiores cum saepe accusamus nostrum. Veritatis soluta ut deleniti </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam voluptatibus exercitationem veritatis
+            iusto doloribus, molestiae, quasi tempore dolore a tenetur quas provident necessitatibus, cupiditate sed
+            asperiores cum saepe accusamus nostrum. Veritatis soluta ut deleniti </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam voluptatibus exercitationem veritatis
+            iusto doloribus, molestiae, quasi tempore dolore a tenetur quas provident necessitatibus, cupiditate sed
+            asperiores cum saepe accusamus nostrum. Veritatis soluta ut deleniti </p>
+    </div>
+
+    <div id="div-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam voluptatibus exercitationem veritatis
+            iusto doloribus, molestiae, quasi <span>this is span </span>tempore dolore a tenetur quas provident necessitatibus, cupiditate sed
+            asperiores cum saepe accusamus nostrum. Veritatis soluta ut deleniti </p>
+    </div>
+<div id="div-3">
+    <h1>this is general selector</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam alias aut! Voluptate id exercitationem eaque aut consectetur expedita molestiae optio placeat necessitatibus numquam aspernatur modi voluptas vero odit quasi, temporibus ullam laboriosam ratione reprehenderit nihil itaque blanditiis! Rem error ex doloremque? Ab, ipsa quidem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam alias aut! Voluptate id exercitationem eaque aut consectetur expedita molestiae optio placeat necessitatibus numquam aspernatur modi voluptas vero odit quasi, temporibus ullam laboriosam ratione reprehenderit nihil itaque blanditiis! Rem error ex doloremque? Ab, ipsa quidem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam alias aut! Voluptate id exercitationem eaque aut consectetur expedita molestiae optio placeat necessitatibus numquam aspernatur modi voluptas vero odit quasi, temporibus ullam laboriosam ratione reprehenderit nihil itaque blanditiis! Rem error ex doloremque? Ab, ipsa quidem.</p>
+</div>
+
+</body>
+
+</html>
