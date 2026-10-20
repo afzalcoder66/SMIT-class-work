@@ -1,0 +1,339 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background-color: black;
+    min-height: 80px;
+}
+
+.logo h2 {
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: red;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.button {
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.button span {
+    margin-left: 8px;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Libre Caslon Condensed", serif;
+    margin-bottom: 30px;
+}
+
+/* Categories */
+
+.categories {
+    background-color: black;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.categories .card {
+    width: 200px;
+}
+
+.categories .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.categories .card p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* About */
+
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #0a0a0a;
+}
+
+.about > img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 50%;
+    padding: 70px 70px;
+}
+
+.about-text h3 {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.learn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+    min-width: 160px;
+    padding: 12px 18px;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.learn-btn:hover {
+    background-color: red;
+}
+
+/* Deals */
+
+.deals {
+    background-color: black;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.deals h2 {
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+
+.deal-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.deals .card {
+    width: 300px;
+}
+
+.deals .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.deals .card p {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 15px 0 25px;
+}
+
+/* Menu of the Week */
+
+.deals-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.deal-text {
+    width: 50%;
+    padding: 45px 6%;
+}
+
+.deal-text h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: white;
+}
+
+.deal-text h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 15px 0 25px;
+}
+
+.deal-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 20px 0 25px;
+    color: #d0d0d0;
+}
+
+.deal-text h4 {
+    font-size: 22px;
+    margin: 10px 0 25px;
+}
+
+/* Food Image */
+
+.deal-image {
+    width: 50%;
+    height: 465px;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Order Button */
+
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 14px 22px;
+    font-size: 14px;
+    border: 1px solid red;
+}
+
+.order-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .right {
+        flex-wrap: wrap;
+    }
+
+    .banner img {
+        height: 300px;
+    }
+
+    .categories,
+    .deals {
+        padding: 50px 20px;
+    }
+
+    .about,
+    .deals-section {
+        flex-direction: column;
+    }
+
+    .about > img,
+    .about-text,
+    .deal-text,
+    .deal-image {
+        width: 100%;
+    }
+
+    .about > img {
+        height: 350px;
+    }
+
+    .about-text {
+        padding: 40px 25px;
+    }
+
+    .deal-image {
+        height: 320px;
+    }
+}
